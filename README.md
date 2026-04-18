@@ -16,24 +16,24 @@ Quick Start / Installation Requirements
 - A Gmail account (for Nodemailer)
 
 Installation Steps
-    Clone the repository:
-    git clone https://github.com/Chidiogoezeh/Third-semester-month-2.git
-    cd Third-semester-month-2 +(rename to whatever you like)
+    - Clone the repository:
+    - git clone https://github.com/Chidiogoezeh/Third-semester-month-2.git
+    - cd Third-semester-month-2 +(rename to whatever you like)
 
 Install dependencies:
-    npm init -y
-    npm install
+    - npm init -y
+    - npm install
 
 Configuration
 Create a .env file in the root directory and add your credentials:
-    PORT=3000
-    DB_URI=your_mongodb_connection_string
-    EMAIL_USER=your-email@gmail.com
-    EMAIL_PASS=your-app-specific-password
+    - PORT=3000
+    - DB_URI=your_mongodb_connection_string
+    - EMAIL_USER=your-email@gmail.com
+    - EMAIL_PASS=your-app-specific-password.
 Note: For Gmail, you must generate an App Password in your Google Account security settings.
 
 Running the App
-    npm start or node server.js
+    - npm start or node server.js
 
 UI Interaction
 - Open your browser to http://localhost:3000.
@@ -41,11 +41,12 @@ UI Interaction
 - Click Save Reminder.
 
 Backend Logic;
-The bot uses a cron job scheduled with the following pattern:
+- The bot uses a cron job scheduled with the following pattern:
 0 7 * * * (Every day at 7:00 AM)
 
 Database Schema
 Data is stored in MongoDB with the following structure in json format:
+
     {
     "username": "Chidiogo Ezeh",
     "email": "example@email.com",
